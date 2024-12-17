@@ -14,14 +14,14 @@ const Footer = () => {
                 <div className="lg:mb-16 flex flex-col items-center">
                   <Link href="/" className="inline-block">
                     <Image
-                      src="/images/lightLogo.png"
+                      src="/images/LOGO-4.png"
                       alt="logo"
                       className="w-full dark:hidden bg-gray-dark rounded-full"
                       width={120}
                       height={30}
                     />
                     <Image
-                      src="/images/lightLogo.png"
+                      src="/images/LOGO-4.png"
                       alt="logo"
                       className="hidden w-full dark:block"
                       width={120}
