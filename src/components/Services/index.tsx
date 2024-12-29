@@ -55,7 +55,7 @@ const Services = () => {
           pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{ delay: 50000 }}
+          autoplay={{ delay: 5000 }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

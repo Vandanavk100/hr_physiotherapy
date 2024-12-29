@@ -56,7 +56,7 @@ const Hero = () => {
         <img
           src="/images/dr_abhishek03.png"
           alt="Dr. Abhishek Kumawat"
-          className="h-auto w-[80%] max-w-[300px] sm:w-[70%] lg:w-[60%]"
+          className="h-auto w-[60%] max-w-[300px] sm:w-[70%] lg:w-[60%]"
         />
         {/* Display Doctor's Name and Qualification for smaller screens */}
         <div className="block sm:hidden mt-4 text-center">
