@@ -62,7 +62,7 @@ const blogData: Blog[] = [
     title: "Arthritis",
     paragraph:
       "Joint inflammation causing pain, stiffness, and limited movement, often from wear.",
-    image: "/images/Arthritis.jfif",
+    image: "/images/Arthritis.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
