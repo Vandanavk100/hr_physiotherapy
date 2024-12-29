@@ -1,5 +1,5 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
+import SingleBlog from "@/components/Services/SingleBlog";
+import blogData from "@/components/Services/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const Blog = () => {
+const Services = () => {
   return (
     <>
       <Breadcrumb
@@ -96,4 +96,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Services;

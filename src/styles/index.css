@@ -32,3 +32,6 @@
     @apply opacity-100;
   }
 }
+.blog-slider .swiper-wrapper {
+  margin: 5px;
+}

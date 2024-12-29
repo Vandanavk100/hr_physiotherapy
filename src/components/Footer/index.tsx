@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';  // Import Font Awesome icons
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa"; // Import Font Awesome icons
 
 const Footer = () => {
   return (
@@ -11,12 +11,12 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/3 lg:w-3/12 xl:w-4/12">
               <div className="mb-12 max-w-[300px] lg:mb-16">
-                <div className="lg:mb-16 flex flex-col items-center">
+                <div className="flex flex-col items-center lg:mb-16">
                   <Link href="/" className="inline-block">
                     <Image
                       src="/images/LOGO-4.png"
                       alt="logo"
-                      className="w-full dark:hidden bg-gray-dark rounded-full"
+                      className="w-full rounded-full bg-gray-dark dark:hidden"
                       width={120}
                       height={30}
                     />
@@ -67,7 +67,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full px-4 sm:w-1/2 md:w-2/2 lg:w-3/12 xl:w-3/12">
+            <div className="md:w-2/2 w-full px-4 sm:w-1/2 lg:w-3/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Services
@@ -112,7 +112,8 @@ const Footer = () => {
                     >
                       Post-Surgery Recovery
                     </Link>
-                  </li>                </ul>
+                  </li>{" "}
+                </ul>
               </div>
             </div>
 
@@ -127,7 +128,8 @@ const Footer = () => {
                       href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      139 M road near leher apartment Bhupalpura , Udaipur, Rajasthan.
+                      139 M road near leher apartment Bhupalpura , Udaipur,
+                      Rajasthan.
                     </Link>
                   </li>
                   <li>
@@ -143,7 +145,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-4 flex items-center justify-center">
+          <div className="flex items-center justify-center py-4">
             <a
               href="https://www.instagram.com/hr_physiotherapy?igsh=MWoyYmoxM2Q5bnFjbQ=="
               aria-label="Instagram"
@@ -151,7 +153,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
             >
-              <FaFacebookF size={18} />
+              <FaInstagram size={18} />
             </a>
             <a
               href="https://www.facebook.com/share/1Gz7sokkVV/?mibextid=LQQJ4d"
@@ -160,7 +162,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
             >
-              <FaInstagram size={18} />
+              <FaFacebookF size={18} />
             </a>
             <a
               href="https://wa.me/918107324399"

@@ -1,5 +1,5 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutSectionTwo from "@/components/About/faq";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 

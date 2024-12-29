@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useEffect, useRef } from "react";
 
-const Blog = () => {
+const Services = () => {
   const blogRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // IntersectionObserver to add "visible" class when blog card enters the viewport
@@ -40,7 +40,7 @@ const Blog = () => {
 
   return (
     <section
-      id="blog"
+      id="Services"
       className="bg-gray-100 dark:bg-gray-900 py-16 md:py-20 lg:py-28"
     >
       <div className="container mx-auto px-4">
@@ -55,7 +55,7 @@ const Blog = () => {
           pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 50000 }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -79,4 +79,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Services;

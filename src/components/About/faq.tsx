@@ -8,7 +8,7 @@ import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
-const AboutSectionTwo = () => {
+const FAQ = () => {
   const title = "text-lg font-bold text-black dark:text-white sm:text-lg lg:text-lg xl:text-lg";
   const description = "text-sm font-medium leading-relaxed text-body-color sm:text-sm sm:leading-relaxed";
 
@@ -106,4 +106,4 @@ const AboutSectionTwo = () => {
   );
 };
 
-export default AboutSectionTwo;
+export default FAQ;
