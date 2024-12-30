@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/3 lg:w-3/12 xl:w-4/12">
+            <div className="flex w-full justify-center px-4 md:w-1/3 lg:w-3/12 xl:w-4/12">
               <div className="mb-12 max-w-[300px] lg:mb-16">
                 <div className="flex flex-col items-center lg:mb-16">
                   <Link href="/" className="inline-block">
@@ -21,7 +21,7 @@ const Footer = () => {
                       height={30}
                     />
                     <Image
-                     src="/images/LOGO-3.png"
+                      src="/images/LOGO-3.png"
                       alt="logo"
                       className="hidden w-full dark:block"
                       width={120}
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className="w-full px-4 text-center sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
@@ -67,7 +67,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="md:w-2/2 w-full px-4 sm:w-1/2 lg:w-3/12 xl:w-3/12">
+            <div className="md:w-2/2 w-full px-4 text-center sm:w-1/2 lg:w-3/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Services
@@ -109,7 +109,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div className="w-full px-4 text-center md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Support & Help

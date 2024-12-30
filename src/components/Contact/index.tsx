@@ -61,7 +61,7 @@ const Contact = () => {
               data-wow-delay=".15s"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.916182839888!2d73.6994854!3d24.592088699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e52d6b46b5cf%3A0xcb4800078943036a!2sHR%20Physiotherapy!5e0!3m2!1sen!2sin!4v1734083988044!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d29021.4337795906!2d73.67901287965374!3d24.60026434837341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d24.606866999999998!2d73.697814!4m5!1s0x3967e5f5e76496a9%3A0x12b8d82e878521e9!2s139%2C%20M%20road%2C%20near%20bansi%20pan%2C%20Bhupalpura%2C%20Udaipur%2C%20Rajasthan%20313001!3m2!1d24.592234899999998!2d73.6997094!5e0!3m2!1sen!2sin!4v1735533408086!5m2!1sen!2sin"
                 width="600"
                 height="450"
                 style={{ border: 0 }}
@@ -72,7 +72,8 @@ const Contact = () => {
               <div className="bg-gray-50 p-6">
                 <h3 className="text-lg font-semibold text-primary">Visit Us</h3>
                 <p className="mt-2 text-sm text-body-color">
-                  Your clinic address goes here. Our clinic is located in 139 M road near leher apartment Bhupalpura , Udaipur, Rajasthan.
+                  Our clinic is located in 139 M road near leher apartment
+                  Bhupalpura , Udaipur, Rajasthan.
                 </p>
               </div>
             </div>
@@ -110,8 +111,9 @@ const Contact = () => {
                     })}
                     type="text"
                     placeholder="Enter your name"
-                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${errors.name ? "border-red-500" : "border-gray-300"
-                      }`}
+                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${
+                      errors.name ? "border-red-500" : "border-gray-300"
+                    }`}
                   />
                   {errors.name && (
                     <p className="mt-1 text-sm text-red">
@@ -138,8 +140,9 @@ const Contact = () => {
                     })}
                     type="email"
                     placeholder="Enter your email"
-                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${errors.email ? "border-red-500" : "border-gray-300"
-                      }`}
+                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${
+                      errors.email ? "border-red-500" : "border-gray-300"
+                    }`}
                   />
                   {errors.email && (
                     <p className="text-red-500 mt-1 text-sm">
@@ -166,8 +169,9 @@ const Contact = () => {
                     })}
                     type="text"
                     placeholder="Enter your phone number"
-                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${errors.mobile ? "border-red-500" : "border-gray-300"
-                      }`}
+                    className={`w-full rounded-sm border bg-[#f8f8f8] p-2 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${
+                      errors.mobile ? "border-red-500" : "border-gray-300"
+                    }`}
                   />
                   {errors.mobile && (
                     <p className="text-red-500 mt-1 text-sm">
@@ -190,8 +194,9 @@ const Contact = () => {
                     })}
                     rows={3}
                     placeholder="Enter your message"
-                    className={`w-full resize-none rounded-sm border bg-[#f8f8f8] px-4 py-3 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${errors.message ? "border-red-500" : "border-gray-300"
-                      }`}
+                    className={`w-full resize-none rounded-sm border bg-[#f8f8f8] px-4 py-3 text-base text-body-color focus:outline-primary dark:bg-[#2C303B] ${
+                      errors.message ? "border-red-500" : "border-gray-300"
+                    }`}
                   ></textarea>
                   {errors.message && (
                     <p className="text-red-500 mt-1 text-sm">
