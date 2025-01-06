@@ -17,10 +17,10 @@ const Video = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
-              className="mx-auto max-w-[770px] overflow-hidden rounded-md"
+              className="mx-auto max-w-[770px] overflow-hidden rounded-md shadow-lg"
               data-wow-delay=".15s"
             >
-              <div className="relative aspect-[77/40] items-center justify-center">
+              <div className="relative aspect-[77/40] items-center justify-center shadow-lg">
                 <video
                   className="w-full h-full object-cover rounded-md"
                   controls

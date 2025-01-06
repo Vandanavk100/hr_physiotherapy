@@ -8,6 +8,7 @@ import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   const title =
@@ -108,10 +109,26 @@ const FAQ = () => {
                 >
                   {faqs.map((faq, index) => (
                     <SwiperSlide key={index}>
-                      <div>
-                        <h3 className={`${title}`}>{faq.question}</h3>
-                        <p className={`${description}`}>{faq.answer}</p>
-                      </div>
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: index * 0.2 }}
+                        className="faq-item mb-8 cursor-pointer rounded-lg bg-white p-6 shadow-lg hover:shadow-xl"
+                      >
+                        <div className="flex items-center justify-between">
+                          <h3 className={`${title} text-gray-dark  `}>
+                            {faq.question}
+                          </h3>
+                        </div>
+                        <motion.p
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.6 }}
+                          className={`${description} mt-2 text-gray-700`}
+                        >
+                          {faq.answer}
+                        </motion.p>
+                      </motion.div>
                     </SwiperSlide>
                   ))}
                 </Swiper>

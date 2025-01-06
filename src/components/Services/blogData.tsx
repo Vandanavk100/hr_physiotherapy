@@ -4,9 +4,8 @@ const blogData: Blog[] = [
   {
     id: 1,
     title: "Cervical Spondylosis",
-    paragraph:
-      "A condition caused by neck joint wear, leading to stiffness, pain, and limited movement.",
-    image: "/images/Cervical.jpg",
+    paragraph: "Neck joint wear causing stiffness, pain, and limited movement.",
+    image: "/images/CervicalSpondylosis.jpg",
     author: {
       name: "Samuyl Joshi",
       image: "/images/blog/author-01.png",
@@ -19,7 +18,7 @@ const blogData: Blog[] = [
     id: 2,
     title: "Radiculopathy",
     paragraph:
-      " Compression of spinal nerves that causes pain, tingling, or weakness in the arms or legs.",
+      " Compression of spinal nerves causing pain, tingling, or weakness in the arms or legs.",
     image: "/images/Radiculopathy.jpg",
     author: {
       name: "Musharof Chy",
@@ -34,7 +33,7 @@ const blogData: Blog[] = [
     title: "Frozen Shoulder",
     paragraph:
       "A condition where shoulder movement is painful and limited due to inflammation.",
-    image: "/images/Frozen Shoulder.jpg",
+    image: "/images/FrozenShoulder.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
@@ -47,7 +46,7 @@ const blogData: Blog[] = [
     id: 3,
     title: "Tannis Elbow Pain",
     paragraph:
-      "Pain on the outer elbow caused by repetitive strain or overuse of forearm muscles.",
+      "Pain on the outer elbow from repetitive strain or overuse of forearm muscles.",
     image: "/images/Tannis Elbow Pain.jpg",
     author: {
       name: "Lethium Deo",
@@ -116,9 +115,8 @@ const blogData: Blog[] = [
   {
     id: 3,
     title: "Paralysis, parkinson's",
-    paragraph:
-      "Paralysis is loss of movement, while Parkinson's involves tremors and motor issues.",
-    image: "/images/Paralysis, parkinson's.jpg",
+    paragraph: "Paralysis causes immobility; Parkinson's causes tremors",
+    image: "/images/Paralysis.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",

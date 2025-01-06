@@ -117,9 +117,9 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
+                                ? "rounded-3xl bg-white p-2 px-3  text-primary dark:text-dark"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
@@ -175,11 +175,13 @@ const Header = () => {
                       </div>
                       <a
                         href="https://wa.me/918107324399"
-                        className="group relative flex w-auto items-center justify-center gap-1 rounded-full bg-green p-2 text-white transition-all duration-300 hover:opacity-70 hover:shadow-lg lg:hidden"
-                        aria-label="Contact us on WhatsApp "
+                        className="group relative flex w-auto items-center justify-center gap-1 rounded-full bg-[#28824e] p-2 text-white transition-all duration-300 hover:opacity-70 hover:shadow-lg lg:hidden"
+                        aria-label="Contact us on WhatsApp"
                       >
-                        <FaWhatsapp className="text-xl" />
                         <p>Contact Us</p>
+                        <div className="mx-2 h-4 w-px bg-white" />{" "}
+                        {/* White separator line */}
+                        <FaWhatsapp className="text-xl" />
                       </a>
                     </div>
                   </ul>
@@ -189,11 +191,12 @@ const Header = () => {
                 <ThemeToggler />
                 <a
                   href="https://wa.me/1234567890"
-                  className="ml-4 flex w-auto items-center justify-center gap-1 rounded-full bg-green p-2 text-white transition-all duration-300 hover:opacity-70 hover:shadow-lg"
+                  className="ml-4 flex w-auto items-center justify-center gap-1 rounded-full bg-[#28824e] p-2 px-4 text-white transition-all duration-300 hover:opacity-70 hover:shadow-lg"
                   aria-label="Contact us on WhatsApp"
                 >
-                  <FaWhatsapp className="text-xl" />
                   <p>Contact Us</p>
+                  <div className="mx-2 h-4 w-px bg-white" />{" "}
+                  <FaWhatsapp className="text-xl" />
                 </a>
               </div>
             </div>

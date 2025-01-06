@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <ScrollUp />
+      {/* <ScrollUp /> */}
       <Hero />
       <Banner />
       <Services />
