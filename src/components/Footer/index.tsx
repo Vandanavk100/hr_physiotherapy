@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa"; // Import Font Awesome icons
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const Footer = () => {
   return (
@@ -9,7 +10,12 @@ const Footer = () => {
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="flex w-full justify-center px-4 md:w-1/3 lg:w-3/12 xl:w-4/12">
+            <motion.div
+              className="flex w-full justify-center px-4 md:w-1/3 lg:w-3/12 xl:w-4/12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <div className="mb-12 max-w-[300px] lg:mb-16">
                 <div className="flex flex-col items-center lg:mb-16">
                   <Link href="/" className="inline-block">
@@ -28,13 +34,19 @@ const Footer = () => {
                       height={30}
                     />
                   </Link>
-                  <p className="py-6 text-base leading-relaxed  dark:text-body-color-dark">
+                  <p className="py-6 text-base leading-relaxed dark:text-body-color-dark">
                     MOVEMENT IS MEDICINE
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="w-full px-4 text-center sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            </motion.div>
+
+            <motion.div
+              className="w-full px-4 text-center sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
@@ -66,8 +78,14 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="md:w-2/2 w-full px-4 text-center sm:w-1/2 lg:w-3/12 xl:w-3/12">
+            </motion.div>
+
+            <motion.div
+              className="md:w-2/2 w-full px-4 text-center sm:w-1/2 lg:w-3/12 xl:w-3/12"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            >
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Services
@@ -104,12 +122,17 @@ const Footer = () => {
                     >
                       Post-Surgery Recovery
                     </Link>
-                  </li>{" "}
+                  </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="w-full px-4 text-center md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <motion.div
+              className="w-full px-4 text-center md:w-1/2 lg:w-4/12 xl:w-3/12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+            >
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Support & Help
@@ -134,10 +157,22 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="flex items-center justify-center py-4">
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+            className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"
+          ></motion.div>
+
+          <motion.div
+            className="flex items-center justify-center py-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 1 }}
+          >
             <a
               href="https://www.instagram.com/hr_physiotherapy?igsh=MWoyYmoxM2Q5bnFjbQ=="
               aria-label="Instagram"
@@ -165,7 +200,7 @@ const Footer = () => {
             >
               <FaWhatsapp size={18} />
             </a>
-          </div>
+          </motion.div>
         </div>
       </footer>
     </>
