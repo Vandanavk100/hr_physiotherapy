@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SectionTitle from "../Common/SectionTitle";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion"; // Import framer-motion
 
 type FormData = {
   name: string;
@@ -56,8 +57,13 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <SectionTitle title="Book Appointment" paragraph="" center />
         <div className="-mx-4 flex flex-wrap">
-          {/* Left Side: Map */}
-          <div className="w-full px-4 lg:w-1/2">
+          {/* Left Side: Form */}
+          <motion.div
+            className="w-full px-4 lg:w-1/2"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div
               className="rounded-sm bg-white px-4 py-4 shadow-three dark:bg-gray-dark"
               data-wow-delay=".15s"
@@ -93,9 +99,7 @@ const Contact = () => {
                     }`}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red">
-                      {errors.name.message}
-                    </p>
+                    <p className="mt-1 text-sm text-red">{errors.name.message}</p>
                   )}
                 </div>
 
@@ -122,9 +126,7 @@ const Contact = () => {
                     }`}
                   />
                   {errors.email && (
-                    <p className="text-red-500 mt-1 text-sm">
-                      {errors.email.message}
-                    </p>
+                    <p className="text-red-500 mt-1 text-sm">{errors.email.message}</p>
                   )}
                 </div>
 
@@ -151,9 +153,7 @@ const Contact = () => {
                     }`}
                   />
                   {errors.mobile && (
-                    <p className="text-red-500 mt-1 text-sm">
-                      {errors.mobile.message}
-                    </p>
+                    <p className="text-red-500 mt-1 text-sm">{errors.mobile.message}</p>
                   )}
                 </div>
 
@@ -176,14 +176,16 @@ const Contact = () => {
                     }`}
                   ></textarea>
                   {errors.message && (
-                    <p className="text-red-500 mt-1 text-sm">
-                      {errors.message.message}
-                    </p>
+                    <p className="text-red-500 mt-1 text-sm">{errors.message.message}</p>
                   )}
                 </div>
 
                 {/* Submit Button */}
-                <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.6 }}
+                >
                   <button
                     type="submit"
                     className={`mb-6 inline-flex w-full items-center justify-center gap-3 rounded-full ${
@@ -194,17 +196,19 @@ const Contact = () => {
                   >
                     Book Appointment
                   </button>
-                </div>
+                </motion.div>
               </form>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right Side: Form */}
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="mb-10 overflow-hidden rounded-sm shadow-three"
-              data-wow-delay=".15s"
-            >
+          {/* Right Side: Google Map */}
+          <motion.div
+            className="w-full px-4 lg:w-1/2"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="mb-10 overflow-hidden rounded-sm shadow-three">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d29021.4337795906!2d73.67901287965374!3d24.60026434837341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d24.606866999999998!2d73.697814!4m5!1s0x3967e5f5e76496a9%3A0x12b8d82e878521e9!2s139%2C%20M%20road%2C%20near%20bansi%20pan%2C%20Bhupalpura%2C%20Udaipur%2C%20Rajasthan%20313001!3m2!1d24.592234899999998!2d73.6997094!5e0!3m2!1sen!2sin!4v1735533408086!5m2!1sen!2sin"
                 width="600"
@@ -222,7 +226,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <ToastContainer />
