@@ -24,7 +24,7 @@ const Services = () => {
       },
       {
         threshold: 0.3, // Trigger when 30% of the element is visible
-      },
+      }
     );
 
     blogRefs.current.forEach((blogRef) => {
@@ -41,7 +41,7 @@ const Services = () => {
   return (
     <section
       id="Services"
-      className="bg-gray-100 py-16 dark:bg-gray-900 md:py-20 lg:py-28"
+      className="bg-gray-100 dark:bg-gray-900 py-16 md:py-20 lg:py-28"
     >
       <div className="container mx-auto px-4">
         <SectionTitle
@@ -67,7 +67,7 @@ const Services = () => {
             <SwiperSlide key={blog.id}>
               <div
                 ref={(el) => (blogRefs.current[index] = el)}
-                className="blog-card border-b-2 border-solid bg-gradient-to-r from-[#09afb9] to-[#fed9b8]" // Gradient bottom border
+                className="blog-card"
               >
                 <SingleBlog blog={blog} />
               </div>
