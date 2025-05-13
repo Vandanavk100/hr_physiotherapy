@@ -33,7 +33,7 @@ const blogData: Blog[] = [
     title: "Frozen Shoulder",
     paragraph:
       "A condition where shoulder movement is painful and limited due to inflammation.",
-    image: "/images/frozen-shoulder.jfif",
+    image: "/images/frozen-shoulder.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
@@ -47,7 +47,7 @@ const blogData: Blog[] = [
     title: "Tannis Elbow Pain",
     paragraph:
       "Pain on the outer elbow from repetitive strain or overuse of forearm muscles.",
-    image: "/images/elbow-pain.jfif",
+    image: "/images/elbow-pain.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
@@ -89,7 +89,7 @@ const blogData: Blog[] = [
     title: "Heel Pain",
     paragraph:
       "Discomfort in the heel, often due to overuse, plantar fasciitis, or bone spurs.",
-    image: "/images/heel-pain.jfif",
+    image: "/images/heel-pain.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
@@ -116,7 +116,7 @@ const blogData: Blog[] = [
     id: 9,
     title: "Paralysis, Parkinson's",
     paragraph: "Paralysis causes immobility; Parkinson's causes tremors",
-    image: "/images/parkinson.jfif",
+    image: "/images/parkinson.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
@@ -158,7 +158,7 @@ const blogData: Blog[] = [
     title: "Back Pain",
     paragraph:
       "General discomfort in the lower or upper back, often due to poor posture, injury, or strain.",
-    image: "/images/back-pain.jfif",
+    image: "/images/back-pain.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
