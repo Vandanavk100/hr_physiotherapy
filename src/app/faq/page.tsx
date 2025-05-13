@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const FAQ = () => {
   const title =
-    "text-lg font-bold text-black dark:text-white sm:text-lg lg:text-lg xl:text-lg";
+    "text-lg font-bold text-black sm:text-lg lg:text-lg xl:text-lg";
   const description =
     "text-sm font-medium leading-relaxed text-body-color sm:text-sm sm:leading-relaxed";
 
