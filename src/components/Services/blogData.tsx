@@ -116,7 +116,7 @@ const blogData: Blog[] = [
     id: 9,
     title: "Paralysis, Parkinson's",
     paragraph: "Paralysis causes immobility; Parkinson's causes tremors",
-    image: "/images/parkinson.jpg",
+    image: "/images/Parkinsons-Disease.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
